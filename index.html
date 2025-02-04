@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+    /* Paste the entire <style> block from RobustPred here */
+    body {
+        font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px;
+    }
+    /* Add the rest of the styles from RobustPred */
+</style>
+
+<head>
+    <title>Your Paper Title</title>
+    <meta property="og:description" content="Your paper description"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="paper-title">
+        <h1>Your Paper Title</h1>
+    </div>
+
+    <div id="authors">
+        <center>
+            <div class="author-row">
+                <div class="col-3 text-center"><a href="https://yourwebsite.com/">Your Name</a><sup>1</sup></div>
+                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Coauthor Name</a><sup>2</sup></div>
+                <!-- Add more authors as needed -->
+            </div>
+
+            <center>
+                <table align=center width=500px>
+                    <tr>
+                        <td align=center width=200px>
+                            <center>
+                                <span style="font-size:20px"><sup>1</sup> Your Affiliation</span>
+                            </center>
+                        </td>
+                        <td align=center width=200px>
+                            <center>
+                                <span style="font-size:20px"><sup>2</sup> Coauthor Affiliation</span>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </center>
+        <br>
+        <div style="clear: both">
+            <div class="paper-btn-parent">
+                <a class="paper-btn" href="https://arxiv.org/pdf/your-paper.pdf">
+                    <span class="material-icons"> description </span>
+                    Paper
+                </a>
+                <a class="paper-btn" href="https://github.com/yourusername/your-repo">
+                    <span class="material-icons"> code </span>
+                    Code
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="abstract">
+        <h2>Abstract</h2>
+        <hr>
+        <div class="flex-row">
+            <p>
+                Your abstract goes here. Summarize your paper in a few sentences.
+            </p>
+        </div>
+    </section>
+
+    <section id="teaser-image">
+        <figure style="margin-top: 20px; margin-bottom: 20px;">
+            <center><img width="70%" src="./assets/teaser.png" style="margin-bottom: 20px;"></center>
+            <p class="caption">
+                A brief description of your teaser image.
+            </p>
+        </figure>
+    </section>
+
+    <section id="results">
+        <h2>Results</h2>
+        <hr>
+        <div class="flex-row">
+            <p>
+                Describe your results here. Include images, videos, or tables as needed.
+            </p>
+            <iframe src="https://drive.google.com/file/d/your-video-id/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+    </section>
+
+    <section id="paper">
+        <h2>Paper</h2>
+        <hr>
+        <div class="flex-row">
+            <div style="box-sizing: border-box; padding: 16px; margin: auto;">
+                <a href="https://arxiv.org/abs/your-paper"><img class="screenshot" src="./assets/paper-thumbnail.jpg"></a>
+            </div>
+            <div style="width: 50%; font-size: 20px;">
+                <p><b>Your Paper Title</b></p>
+                <p>Your Name, Coauthor Name, etc.</p>
+                <div><span class="material-icons"> description </span><a href="https://arxiv.org/abs/your-paper"> arXiv version</a></div>
+                <div><span class="material-icons"> insert_comment </span><a href="./assets/your-paper.bib"> BibTeX</a></div>
+                <div><span class="material-icons"> integration_instructions </span><a href="https://github.com/yourusername/your-repo"> Code</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bibtex">
+        <h2>Citation</h2>
+        <hr>
+        <pre><code>@inproceedings{yourpaper2023,
+  title={Your Paper Title},
+  author={Your Name and Coauthor Name},
+  booktitle={Conference Name},
+  year={2023},
+  organization={Organization}
+}</code></pre>
+    </section>
+</div>
+</body>
+</html>
