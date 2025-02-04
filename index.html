@@ -119,15 +119,39 @@
             <p>
                 Federated Learning (FL) is a widely adopted distributed machine learning technique where clients collaboratively train a model without sharing their data. A critical component of FL is client selection, which involves choosing the necessary number of clients for each training round. Current client selection algorithms for wireless FL rely on the conditions of wireless channels but do not account for vulnerabilities from attacks on these channels, such as channel state information (CSI) forgery attacks. In this paper, we introduce AirTrojan, a novel attack vector that targets client selection in FL. Our key insight is that since the channel state can be manipulated by attackers, an attacker can adjust their probability of being chosen as a participant. AirTrojan enhances the feasibility of adversarial attacks on FL, which usually assume that malicious clients are always selected as participants. We demonstrate the effectiveness of AirTrojan by showing how it can disrupt client selection and facilitate model poisoning attacks on FL. Our work highlights that it is urgent to add security components to client selection processes in wireless FL.
             </p>
+
+            <ul>
+                <li>We propose AirTrojan, a new attack vector targeting at
+                    practical client selection for wireless FL systems which
+                    has not been identified before.</li>
+                <li>We design and demonstrate two attack strategies
+                    on client selection: AirTrojan-TDoS and AirTrojan-
+                    Collusion. Moreover, we incorporate them into MPAs
+                    for better characterizing the impacts of AirTrojan on
+                    FL systems.</li>
+                <li>We evaluate the attack performance of AirTrojan ex-
+                    tensively under different settings. Our evaluations in-
+                    volve three types of SOTA MPAs, seven defenses, and
+                    three popular datasets. Experimental results confirm that
+                    AirTrojan can manipulate client selection results of
+                    MU-MIMO FL systems and affect MPA and defense
+                    performance significantly.</li>
+            </ul>
+
+            
+            <p>
+                The goals of AirTrojan attacks on FL are straightforward. First of all, the attacker wants to manipulate the results of client selection, i.e., changing (increasing or decreasing) the probabilities of a client being selected. Note that such a client can be a victim client the attacker targets at, the attacker herself, or client(s) colluding with an attacker. Particularly, in this paper, we demonstrate two attacks to manipulate the results of client selection: Targeted Deny-of-Service (TDoS) attack on a benign client and a Collusion attack to increase the probability of a colluded client being selected. Secondly, the attacker wants to exploit AirTrojan (either TDoS or Collusion) to facilitate popular model poisoning attacks including both targeted and untargeted attacks. Note that previous MPAs have assumed that the attacker is always selected for participating each FL training round, during which the attacker is able to insert malicious model updates. We anticipate that such an assumption is unlikely to hold in reality and thus want to explore how attacks on client selection process like AirTrojan can escalate existing MPAs to be feasible in practical settings and potentially other adversarial attacks on FL as well.
+
+            </p>
         </div>
     </section>
 
     <section id="teaser-image">
         <figure style="margin-top: 20px; margin-bottom: 20px;">
             <center><img width="70%" src="./workflow.png" style="margin-bottom: 20px;"></center>
-            <p class="caption">
+            <!-- <p class="caption">
                 Attack flow of AirTrojan.
-            </p>
+            </p> -->
         </figure>
     </section>
 
@@ -140,9 +164,9 @@
             </p>
             <figure style="margin-top: 20px; margin-bottom: 20px;">
                 <center><img width="70%" src="./result.png" style="margin-bottom: 20px;"></center>
-                <p class="caption">
+                <!-- <p class="caption">
                     Impacts of AirTrojan on StealthyMP.
-                </p>
+                </p> -->
             </figure>
         </div>
     </section>
