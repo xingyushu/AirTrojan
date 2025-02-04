@@ -136,7 +136,7 @@
         <hr>
         <div class="flex-row">
             <p>
-                This Figure shows ASRs of stealthy model poisoning (StealthyMP) on three datasets when four aggregations were deployed as the defense. Due to space limit, we cannot include results from all 7 aggregation methods. The main conclusions are consistent from those from untargeted MPAs. Particularly, when client selection was assumed to be perfect for MPA attackers, i.e., an attacker was guaranteed to participate every traing round of FL, StealthyMP achieved the highest ASRs. However, the situation changed significantly when assuming that PS deployed client selection such as the CSI-based method (see Algorithm~\ref{alg:user-selection-scq}), which holds more often in practice. Specifically, client selection at PS can effectively affect (decrease) the probability of the MPA attacker(s) being selected thus significantly reduce ASR of StealthyMP. The results from Fig.~\ref{fig:backdoor1} suggest that StealthyMP achieved only low ASRs (lower than 10\%) and thus became almost ineffective under w/o AirTrojan setting. Finally, when combined with the proposed AirTrojan attacks, StealthyMP was able to achieve similar attack performance as under Legacy 1 and Legacy 2, i.e., the ideal assumption that an MPA attacker was guaranteed to be selected for model training. In conclusion, client selection is critical for StealthyMP while AirTrojan can escalate StealthyMP by attacking client selection at PS.
+                This Figure shows ASRs of stealthy model poisoning (StealthyMP) on three datasets when four aggregations were deployed as the defense. Due to space limit, we cannot include results from all 7 aggregation methods. The main conclusions are consistent from those from untargeted MPAs. Particularly, when client selection was assumed to be perfect for MPA attackers, i.e., an attacker was guaranteed to participate every traing round of FL, StealthyMP achieved the highest ASRs. However, the situation changed significantly when assuming that PS deployed client selection such as the CSI-based method, which holds more often in practice. Specifically, client selection at PS can effectively affect (decrease) the probability of the MPA attacker(s) being selected thus significantly reduce ASR of StealthyMP. The results suggest that StealthyMP achieved only low ASRs (lower than 10%) and thus became almost ineffective under w/o AirTrojan setting. Finally, when combined with the proposed AirTrojan attacks, StealthyMP was able to achieve similar attack performance as under Legacy 1 and Legacy 2, i.e., the ideal assumption that an MPA attacker was guaranteed to be selected for model training. In conclusion, client selection is critical for StealthyMP while AirTrojan can escalate StealthyMP by attacking client selection at PS.
             </p>
             <figure style="margin-top: 20px; margin-bottom: 20px;">
                 <center><img width="70%" src="./result.png" style="margin-bottom: 20px;"></center>
@@ -150,14 +150,16 @@
     <section id="paper">
         <h2>Paper</h2>
         <hr>
-        <div class="flex-row">
-            <div style="box-sizing: border-box; padding: 16px; margin: auto;">
-                <a href="https://ieeexplore.ieee.org/abstract/document/10735606"><img class="screenshot" src="./paper.png"></a>
+        <div class="flex-row" style="display: flex; align-items: center;">
+            <div style="box-sizing: border-box; padding: 16px; margin: auto; flex: 0 0 150px;">
+                <a href="https://ieeexplore.ieee.org/abstract/document/10735606">
+                    <img class="screenshot" src="./paper.png" style="max-width: 100%; height: auto;">
+                </a>
             </div>
-            <div style="width: 50%; font-size: 20px;">
+            <div style="width: 50%; font-size: 20px; padding-left: 16px;">
                 <p><b>Adversarial Attacks on Federated Learning Revisited: a Client-Selection Perspective</b></p>
                 <p>Xingyu Lyu, Shixiong Li, Ning Wang, Tao Li, Danjue Chen, Yimin Chen.</p>
-                <div><span class="material-icons"> description </span><a href="https://ieeexplore.ieee.org/abstract/document/10735606"> arXiv version</a></div>
+                <div><span class="material-icons"> description </span><a href="https://ieeexplore.ieee.org/abstract/document/10735606">PDF</a></div>
                 <!-- <div><span class="material-icons"> insert_comment </span><a href="./assets/your-paper.bib"> BibTeX</a></div> -->
                 <div><span class="material-icons"> integration_instructions </span><a href="https://github.com/CCS2o23/AirTrojan"> Code</a></div>
             </div>
