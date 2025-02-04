@@ -18,7 +18,7 @@
 </style>
 
 <head>
-    <title>Your Paper Title</title>
+    <title>Adversarial Attacks on Federated Learning Revisited: a Client-Selection Perspective</title>
     <meta property="og:description" content="Your paper description"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 </head>
@@ -26,14 +26,18 @@
 <body>
 <div class="container">
     <div class="paper-title">
-        <h1>Your Paper Title</h1>
+        <h1>Adversarial Attacks on Federated Learning Revisited: a Client-Selection Perspective</h1>
     </div>
 
     <div id="authors">
         <center>
             <div class="author-row">
-                <div class="col-3 text-center"><a href="https://yourwebsite.com/">Your Name</a><sup>1</sup></div>
-                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Coauthor Name</a><sup>2</sup></div>
+                <div class="col-3 text-center"><a href="https://yourwebsite.com/">Xingyu Lyu</a><sup>1</sup></div>
+                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Shixiong Li</a><sup>1</sup></div>
+                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Ning Wang</a><sup>2</sup></div>
+                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Tao Li</a><sup>3</sup></div>
+                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Danjue Chen</a><sup>4</sup></div>
+                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Yimin Chen</a><sup>1</sup></div>
                 <!-- Add more authors as needed -->
             </div>
 
@@ -42,12 +46,22 @@
                     <tr>
                         <td align=center width=200px>
                             <center>
-                                <span style="font-size:20px"><sup>1</sup> Your Affiliation</span>
+                                <span style="font-size:20px"><sup>1</sup> University of Massachusetts Lowel</span>
                             </center>
                         </td>
                         <td align=center width=200px>
                             <center>
-                                <span style="font-size:20px"><sup>2</sup> Coauthor Affiliation</span>
+                                <span style="font-size:20px"><sup>2</sup>University of South Florida</span>
+                            </center>
+                        </td>
+                        <td align=center width=200px>
+                            <center>
+                                <span style="font-size:20px"><sup>3</sup>Purdue University</span>
+                            </center>
+                        </td>
+                        <td align=center width=200px>
+                            <center>
+                                <span style="font-size:20px"><sup>4</sup>North Carolina State Universit</span>
                             </center>
                         </td>
                     </tr>
@@ -74,7 +88,7 @@
         <hr>
         <div class="flex-row">
             <p>
-                Your abstract goes here. Summarize your paper in a few sentences.
+                Federated Learning (FL) is a widely adopted distributed machine learning technique where clients collaboratively train a model without sharing their data. A critical component of FL is client selection, which involves choosing the necessary number of clients for each training round. Current client selection algorithms for wireless FL rely on the conditions of wireless channels but do not account for vulnerabilities from attacks on these channels, such as channel state information (CSI) forgery attacks. In this paper, we introduce AirTrojan, a novel attack vector that targets client selection in FL. Our key insight is that since the channel state can be manipulated by attackers, an attacker can adjust their probability of being chosen as a participant. AirTrojan enhances the feasibility of adversarial attacks on FL, which usually assume that malicious clients are always selected as participants. We demonstrate the effectiveness of AirTrojan by showing how it can disrupt client selection and facilitate model poisoning attacks on FL. Our work highlights that it is urgent to add security components to client selection processes in wireless FL.
             </p>
         </div>
     </section>
@@ -107,7 +121,7 @@
                 <a href="https://arxiv.org/abs/your-paper"><img class="screenshot" src="./assets/paper-thumbnail.jpg"></a>
             </div>
             <div style="width: 50%; font-size: 20px;">
-                <p><b>Your Paper Title</b></p>
+                <p><b>Adversarial Attacks on Federated Learning Revisited: a Client-Selection Perspective</b></p>
                 <p>Your Name, Coauthor Name, etc.</p>
                 <div><span class="material-icons"> description </span><a href="https://arxiv.org/abs/your-paper"> arXiv version</a></div>
                 <div><span class="material-icons"> insert_comment </span><a href="./assets/your-paper.bib"> BibTeX</a></div>
@@ -119,13 +133,16 @@
     <section id="bibtex">
         <h2>Citation</h2>
         <hr>
-        <pre><code>@inproceedings{yourpaper2023,
-  title={Your Paper Title},
-  author={Your Name and Coauthor Name},
-  booktitle={Conference Name},
-  year={2023},
-  organization={Organization}
-}</code></pre>
+        <pre><code>@INPROCEEDINGS{10735606,
+            author={Lyu, Xingyu and Li, Shixiong and Wang, Ning and Li, Tao and Chen, Danjue and Chen, Yimin},
+            booktitle={2024 IEEE Conference on Communications and Network Security (CNS)}, 
+            title={Adversarial Attacks on Federated Learning Revisited: a Client-Selection Perspective}, 
+            year={2024},
+            volume={},
+            number={},
+            pages={1-9},
+            keywords={Wireless communication;Training;Machine learning algorithms;Federated learning;Distributed databases;Network security;Vectors;Forgery;Data models;Communication system security},
+            doi={10.1109/CNS62487.2024.10735606}}</code></pre>
     </section>
 </div>
 </body>
