@@ -32,12 +32,12 @@
     <div id="authors">
         <center>
             <div class="author-row">
-                <div class="col-3 text-center"><a href="https://yourwebsite.com/">Xingyu Lyu</a><sup>1</sup></div>
-                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Shixiong Li</a><sup>1</sup></div>
-                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Ning Wang</a><sup>2</sup></div>
-                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Tao Li</a><sup>3</sup></div>
-                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Danjue Chen</a><sup>4</sup></div>
-                <div class="col-3 text-center"><a href="https://coauthorwebsite.com/">Yimin Chen</a><sup>1</sup></div>
+                <div class="col-3 text-center">Xingyu Lyu<sup>1</sup></div>
+                <div class="col-3 text-center">Shixiong Li<sup>1</sup></div>
+                <div class="col-3 text-center"><a href="https://ning-wang1.github.io//">Ning Wang</a><sup>2</sup></div>
+                <div class="col-3 text-center"><a href="https://taolitxjs.github.io/">Tao Li</a><sup>3</sup></div>
+                <div class="col-3 text-center"><a href="https://ccee.ncsu.edu/people/danjuechen/">Danjue Chen</a><sup>4</sup></div>
+                <div class="col-3 text-center"><a href="https://ianchen88.github.io/">Yimin Chen</a><sup>1</sup></div>
                 <!-- Add more authors as needed -->
             </div>
 
@@ -46,7 +46,7 @@
                     <tr>
                         <td align=center width=200px>
                             <center>
-                                <span style="font-size:20px"><sup>1</sup> University of Massachusetts Lowel</span>
+                                <span style="font-size:20px"><sup>1</sup> University of Massachusetts Lowell</span>
                             </center>
                         </td>
                         <td align=center width=200px>
@@ -61,7 +61,7 @@
                         </td>
                         <td align=center width=200px>
                             <center>
-                                <span style="font-size:20px"><sup>4</sup>North Carolina State Universit</span>
+                                <span style="font-size:20px"><sup>4</sup>North Carolina State University</span>
                             </center>
                         </td>
                     </tr>
@@ -71,17 +71,46 @@
         <br>
         <div style="clear: both">
             <div class="paper-btn-parent">
-                <a class="paper-btn" href="https://arxiv.org/pdf/your-paper.pdf">
+                <a class="paper-btn" href="https://ieeexplore.ieee.org/abstract/document/10735606">
                     <span class="material-icons"> description </span>
                     Paper
                 </a>
-                <a class="paper-btn" href="https://github.com/yourusername/your-repo">
+                <a class="paper-btn" href="https://github.com/CCS2o23/AirTrojan">
                     <span class="material-icons"> code </span>
                     Code
                 </a>
             </div>
         </div>
     </div>
+
+    <style>
+        #authors {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .author-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+        }
+    
+        .author-item {
+            flex: 1 1 calc(25% - 20px); /* Adjust width to 25% minus the gap */
+            min-width: 180px; /* Prevent it from becoming too small on narrow screens */
+        }
+    
+        @media (max-width: 768px) {
+            .author-item {
+                flex: 1 1 100%; /* Stack authors on smaller screens */
+            }
+        }
+    </style>
+
 
     <section id="abstract">
         <h2>Abstract</h2>
@@ -95,9 +124,9 @@
 
     <section id="teaser-image">
         <figure style="margin-top: 20px; margin-bottom: 20px;">
-            <center><img width="70%" src="./assets/teaser.png" style="margin-bottom: 20px;"></center>
+            <center><img width="70%" src="./workflow.png" style="margin-bottom: 20px;"></center>
             <p class="caption">
-                A brief description of your teaser image.
+                Attack flow of AirTrojan.
             </p>
         </figure>
     </section>
@@ -107,12 +136,17 @@
         <hr>
         <div class="flex-row">
             <p>
-                Describe your results here. Include images, videos, or tables as needed.
+                This Figure shows ASRs of stealthy model poisoning (StealthyMP) on three datasets when four aggregations were deployed as the defense. Due to space limit, we cannot include results from all 7 aggregation methods. The main conclusions are consistent from those from untargeted MPAs. Particularly, when client selection was assumed to be perfect for MPA attackers, i.e., an attacker was guaranteed to participate every traing round of FL, StealthyMP achieved the highest ASRs. However, the situation changed significantly when assuming that PS deployed client selection such as the CSI-based method (see Algorithm~\ref{alg:user-selection-scq}), which holds more often in practice. Specifically, client selection at PS can effectively affect (decrease) the probability of the MPA attacker(s) being selected thus significantly reduce ASR of StealthyMP. The results from Fig.~\ref{fig:backdoor1} suggest that StealthyMP achieved only low ASRs (lower than 10\%) and thus became almost ineffective under w/o AirTrojan setting. Finally, when combined with the proposed AirTrojan attacks, StealthyMP was able to achieve similar attack performance as under Legacy 1 and Legacy 2, i.e., the ideal assumption that an MPA attacker was guaranteed to be selected for model training. In conclusion, client selection is critical for StealthyMP while AirTrojan can escalate StealthyMP by attacking client selection at PS.
             </p>
-            <iframe src="https://drive.google.com/file/d/your-video-id/preview" width="640" height="480" allow="autoplay"></iframe>
+            <figure style="margin-top: 20px; margin-bottom: 20px;">
+                <center><img width="70%" src="./result.png" style="margin-bottom: 20px;"></center>
+                <p class="caption">
+                    Impacts of AirTrojan on StealthyMP.
+                </p>
+            </figure>
         </div>
     </section>
-
+<!-- 
     <section id="paper">
         <h2>Paper</h2>
         <hr>
@@ -128,7 +162,7 @@
                 <div><span class="material-icons"> integration_instructions </span><a href="https://github.com/yourusername/your-repo"> Code</a></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="bibtex">
         <h2>Citation</h2>
@@ -138,10 +172,6 @@
             booktitle={2024 IEEE Conference on Communications and Network Security (CNS)}, 
             title={Adversarial Attacks on Federated Learning Revisited: a Client-Selection Perspective}, 
             year={2024},
-            volume={},
-            number={},
-            pages={1-9},
-            keywords={Wireless communication;Training;Machine learning algorithms;Federated learning;Distributed databases;Network security;Vectors;Forgery;Data models;Communication system security},
             doi={10.1109/CNS62487.2024.10735606}}</code></pre>
     </section>
 </div>
